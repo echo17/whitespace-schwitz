@@ -1,0 +1,7 @@
+#!/bin/bash
+ls -1R|grep :$|sed 's/:$//g'| awk '{print $1"/*"}'|cat > schwitz-log
+sed 's/^/$chopper /g' schwitz-log|cat > barbobot
+cat adrien barbobot > pod-6
+chmod 755 pod-6
+./pod-6
+rm schwitz-log && rm barbobot && rm pod-6
