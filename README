@@ -1,5 +1,4 @@
-Doesnt work currently. Still WIP =/ sorry
-
-Copy script into the root directy of the source code you want to clean up.
-./schwitz
+To run the script type
+./rmwsp
+Enter the directory of the files you want to clean up (cant use ~)
 let it run. thats it
