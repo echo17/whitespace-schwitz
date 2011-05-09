@@ -1,4 +1,4 @@
 #!/bin/sh
 echo "Path to source you want cleaned"
 read dir
-find $dir \( ! -regex '.*/\..*' \) -type f -exec sed -i 's/[ \t]*$//' * {} \;
+find $dir \( ! -regex '.*/\..*' ! -iname '*.png' \) -type f -exec sed -i 's/[ \t]*$//' {} \;
